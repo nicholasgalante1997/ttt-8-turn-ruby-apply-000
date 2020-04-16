@@ -1,4 +1,5 @@
 board = [" "," "," "," "," "," "," "," "," "]
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -36,7 +37,6 @@ def valid_move?(board, index)
   else
     return false
   end
-
 end
 
 def move(board, index, character = "X")
@@ -54,7 +54,4 @@ def turn(board)
   else
     turn(board)
   end
-end
-
-    
 end
